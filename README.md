@@ -13,6 +13,8 @@ numpy
 tqdm
 tflearn
 Tensorflow
+matplotlib
+argparse
 ```
 
 For first time:
