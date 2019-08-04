@@ -25,8 +25,8 @@ args = vars(ap.parse_args())
 
 # setting up variables
 
-TRAIN_DIR = 'D:/Workspace/train'
-TEST_DIR = 'D:/Workspace/test'
+TRAIN_DIR = '{}/train'.format(os.path.dirname(os.path.realpath(__file__)))
+TEST_DIR = '{}/test'.format(os.path.dirname(os.path.realpath(__file__)))
 IMG_SIZE = 50
 LR = 1e-3
 CATEGORIES = ["Dog", "Cat"]
@@ -129,9 +129,11 @@ def start_training():
     model.save(MODEL_NAME)
     print("Training process completed!")
 
+
 if args["operation"] == "train":
     start_training()
 elif args["operation"] == "normal":
     train_data = create_train_data()
+    test_data = process_test_data()
     start_training()
 
