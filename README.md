@@ -5,6 +5,15 @@ If you will use Kaggle's dataset, set train and test dirs as "currentdir/train" 
 
 ## Usage
 First, you need to install needed libraries.
+```
+tkinter
+Pillow
+cv2
+numpy
+tqdm
+tflearn
+Tensorflow
+```
 
 For first time:
 ```python
@@ -14,7 +23,8 @@ For training existing model:
 ```python
 python train.py -o train
 ```
-For classificate an image:
+For classificate images:
 ```python
-python classification.py -i imagename
+python gui.py
 ```
+or just double click the gui.py and select image from file dialog.
