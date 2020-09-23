@@ -1,4 +1,4 @@
-## Machine learning based Cat vs Dog
+## Deep learning based Cat vs Dog
 The algorithm predicts the defined image "is a dog or cat?" using Tensorflow backend. 
 I used Kaggle Cat vs Dog dataset but you're free to use your own dataset. If you will use your own dataset, you need to edit train.py.
 If you will use Kaggle's dataset, set train and test dirs as "currentdir/train" and "currentdir/test".
